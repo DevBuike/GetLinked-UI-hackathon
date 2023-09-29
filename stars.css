@@ -1,0 +1,206 @@
+    /* stars on small devices   */
+    .heading .star-white {
+        position: absolute;
+        width: 12px;
+        top: 100px;
+        left: 50px;
+        animation: starWhite 1s infinite;
+        -webkit-animation: starWhite 1s infinite;
+}
+
+.heading .star-white2 {
+    position: absolute;
+    right: 0;
+    width: 10px !important;
+    animation: starWhite 1.8s infinite;
+    -webkit-animation: starWhite 1.8s infinite;
+}
+    
+.header-pu-star {
+    position: absolute;
+    right: 90px;
+    top: 40%;
+    width: 20px;
+}
+
+.big-idea-pu {
+    position: absolute;
+    width: 15px !important;
+    top: 30%;
+}
+
+.idea-content .star-white {
+    position: absolute;
+    right: 20px;
+    width: 10px;
+    animation: blink 1.5s infinite;
+    -webkit-animation: blink 1.5s infinite;
+}
+
+.guidline-sect .star-gray {
+    position: absolute;
+    width: 20px;
+    top: 10%;
+    left: 10%;
+}
+
+.guidline-sect .star-white {
+    position: absolute;
+    width: 15px;
+    right: 10%;
+    bottom: 10%;
+}
+
+
+.two-people {
+    & .star-pu {
+        position: absolute;
+        width: 15px;
+    }
+    & .star-white {
+        position: absolute;
+        width: 10px;
+        top: 50%;
+        left: 50%;
+        animation: blink 1.5s infinite;
+        -webkit-animation: blink 1.5s infinite;
+}
+}
+
+.idea-content.two-people .star-pu {
+    right: 10%;
+    animation: blink 2s infinite;
+    -webkit-animation: blink 2s infinite;
+}
+
+.big-idea.thinking {
+    & .star-white {
+        position: absolute;
+        width: 15px;
+        right: 50%;
+        top: -10%;
+        animation: blink 1s infinite;
+        -webkit-animation: blink 1s infinite;
+}
+    & .star-pu {
+        position: absolute;
+        width: 10px;
+        left: 20%;
+        top: 10%;
+        animation: blink 1.8s infinite;
+        -webkit-animation: blink 1.8s infinite;
+}
+    & .star-gray {
+        position: absolute;
+        width: 20px;
+        top: 30%;
+        left: 5%;
+    }
+    & .star-white2 {
+        position: absolute;
+        width: 20px;
+        right: 0;
+        bottom: 0;
+        animation: blink 2.5s infinite;
+        -webkit-animation: blink 2.5s infinite;
+}
+}
+
+.award-section {
+    & .star-pu {
+        position: absolute;
+        width: 10px;
+        top: 15%;
+        left: 10%;
+        animation: blink 1.2s infinite;
+        -webkit-animation: blink 1.2s infinite;
+}
+    & .star-gray {
+        position: absolute;
+        width: 15px;
+        right: 10%;
+        top: 30%;
+        animation: blink 1.8s infinite;
+        -webkit-animation: blink 1.8s infinite;
+}
+}
+
+.trophy .star-white {
+    position: absolute;
+    width: 20px !important;
+}
+
+/* .award-section .awards .star-pu {
+    position: absolute;
+    width: 20px;
+    left: 90%;
+    top: 90%;
+} */
+
+.sponsor-wrap .star-white {
+    position: absolute;
+    width: 15px;
+    right: -15px;
+    top: -20px;
+    animation: blink 2s .5s infinite;
+    -webkit-animation: blink 2s .5s infinite;
+}
+
+    /*   stars on tablet and bigger devices   */
+ @media screen and (min-width: 768px) {
+    /*   stars on the pages    */
+       /* heading section */
+       .heading .star-white {
+        width: 12px;
+        top: 30px;
+}
+
+       .heading .star-white2 {
+        left: 70%;
+        width: 10px !important;
+}
+
+.header-pu-star {
+    right: 50%;
+    top: 70%;
+}
+
+img.big-idea-pu {
+    width: 15px;
+}
+
+}
+
+
+
+
+       /* keyframes for stars   */
+@keyframes starWhite {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }    
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    80% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
